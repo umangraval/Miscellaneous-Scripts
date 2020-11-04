@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  nessus:
+    image: darshkpatel/nessus
+    command: "nessusd"
+    ports:
+      - 8834:8834
+    restart: always
